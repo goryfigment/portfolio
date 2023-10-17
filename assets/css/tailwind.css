@@ -13,25 +13,9 @@
 @font-face {
   font-family: Karla;
   font-display: swap;
-  src: local('Karla'), url(~/assets/fonts/Karla/Karla-Italic.ttf);
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Karla;
-  font-display: swap;
   src: local('Karla'), url(~/assets/fonts/Karla/Karla-Bold.ttf);
   font-weight: bold;
   font-style: normal;
-}
-
-@font-face {
-  font-family: Karla;
-  font-display: swap;
-  src: local('Karla'), url(~/assets/fonts/Karla/Karla-BoldItalic.ttf);
-  font-weight: bold;
-  font-style: italic;
 }
 
 @font-face {

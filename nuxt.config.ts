@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     'nuxt-lazy-load',
+    '@nuxtjs/robots',
   ],
   css: [
     "~/assets/css/tailwind.css"

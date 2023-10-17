@@ -16,7 +16,7 @@
       <h1 class="text-[32px] my-4 font-bold">
         <span>I'm Solomon</span>
       </h1>
-      <p class="text-center">a <span>full</span> stack <span :class="showChange ? disco: ''">developer</span>.</p>
+      <p class="text-center">a web <span :class="showChange ? disco: ''">developer</span>.</p>
     </div>
 
     <div id="mouse" :class="showChange ? 'rotate-[-42deg]' : 'rotate-[-32deg]'" class="bg-white absolute right-[-65px] top-[-26px] w-[37px] h-[50px] shadow-[4px_18px_30px_15px_rgba(95,95,95,1)] rounded-t-[50%_30%] rounded-b-[50%_44%] transition-all duration-500 ease-in-out max-sm:right-[-30px] max-sm:top-[-50px] max-xs:right-[-10px] max-xs:top-[-80px]">
