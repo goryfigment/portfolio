@@ -1,7 +1,7 @@
 <template>
   <div class="relative font-raj">
     <nuxt-link to="https://omnislash.com/app" target="_blank" rel="noopener noreferrer">
-      <NuxtImg class="max-h-96" height="384" width="779" src="/omnislash/omnislash.png" alt="Omnislash" />
+      <img class="max-h-96" height="384" width="779" src="/omnislash/omnislash.png" alt="Omnislash" />
     </nuxt-link>
   </div>
 
