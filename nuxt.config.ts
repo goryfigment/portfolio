@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-lazy-load',
     '@nuxtjs/robots',
+    '@nuxt/image',
   ],
   css: [
     "~/assets/css/tailwind.css"

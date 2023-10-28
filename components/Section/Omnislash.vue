@@ -1,13 +1,13 @@
 <template>
   <div class="relative font-raj">
     <nuxt-link to="https://omnislash.com/app" target="_blank" rel="noopener noreferrer">
-      <img class="max-h-96" height="384" width="779" src="@/assets/projects/omnislash/omnislash.png" alt="Omnislash" />
+      <NuxtImg class="max-h-96" height="384" width="779" src="/omnislash/omnislash.png" alt="Omnislash" placeholder />
     </nuxt-link>
   </div>
 
   <h2 class="text-[32px] my-4 font-sans font-bold">
     <nuxt-link class="flex items-center gap-1" to="https://omnislash.com/app" target="_blank" rel="noopener noreferrer">
-      <img height="19" width="20" src="@/assets/projects/omnislash/logo.png" alt="Omnislash Logo" />
+      <img height="19" width="20" src="/omnislash/logo.png" alt="Omnislash Logo" />
       <span>Omnislash</span>
     </nuxt-link>
   </h2>
