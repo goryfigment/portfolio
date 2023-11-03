@@ -37,7 +37,7 @@ export default {
         roboto: ['Roboto', 'Arial', 'Helvetica', 'sans-serif', 'Georgia', 'serif'],
       },
       transitionProperty: {
-        mainTransition: 'all 150ms ease-out'
+        main: 'all 150ms ease-out'
       },
       animation: {
         glow: 'glow 1s ease-in-out infinite alternate',
