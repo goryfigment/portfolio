@@ -1,38 +1,41 @@
 <template>
-  <Header @scrollToSection="scrollToSection" />
+  <div :class="{'dark': darkMode}">
+    <div class="bg-dim-100 text-primary dark:bg-dim-950 dark:text-darkPrimary transition-main">
+      <Header @scrollToSection="scrollToSection" />
 
-  <Head>
-    <Title>Dev - Solomon Padilla</Title>
-    <Meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <Meta name="description" content="Phoenix-Based Full Stack Web Developer." />
-    <Meta name="keywords" content="Phoenix, Scottsdale, Peoria, Glendale, Full Stack Developer, Front-End Web Developer, Back-End Developer, Solomon Padilla, Django, Python, JavaScript, HTML5, HTML, CSS3, CSS, MySQL, Vue, VueJS, TailWind, Nuxt, NuxtJS" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  </Head>
+      <Head>
+        <Title>Dev - Solomon Padilla</Title>
+        <Meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <Meta name="description" content="Phoenix-Based Full Stack Web Developer." />
+        <Meta name="keywords" content="Phoenix, Scottsdale, Peoria, Glendale, Full Stack Developer, Front-End Web Developer, Back-End Developer, Solomon Padilla, Django, Python, JavaScript, HTML5, HTML, CSS3, CSS, MySQL, Vue, VueJS, TailWind, Nuxt, NuxtJS" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
 
-  <main>
-    <section>
-      <LazySectionHome />
-    </section>
-    <section>
-      <LazySectionMccStats v-if="loadComponents" />
-    </section>
-    <section>
-      <LazySectionOmnislash v-if="loadComponents" />
-    </section>
-    <section>
-      <LazySectionContact v-if="loadComponents" />
-    </section>
+      <main>
+        <section>
+          <LazySectionHome />
+        </section>
+        <section>
+          <LazySectionMccStats v-if="loadComponents" />
+        </section>
+        <section>
+          <LazySectionOmnislash v-if="loadComponents" />
+        </section>
+        <section>
+          <LazySectionContact v-if="loadComponents" />
+        </section>
 
-    <div class="fixed right-0 bottom-20 rotate-[-90deg] select-none text-dim-400 transition-all duration-150 ease-out hover:text-dim-200 max-sm:right-[-20px]">
-      <span v-if="activeSection < offsets.length - 1" class="p-1 cursor-pointer" @click="scrollToSection(activeSection + 1, true)">
-        <Icon name="grommet-icons:form-previous" /> Scroll Down
-      </span>
-      <span v-else class="p-1 cursor-pointer" @click="scrollToSection(0, true)">
-        Scroll To Top <Icon name="grommet-icons:form-next" />
-      </span>
+        <div class="fixed right-0 bottom-20 rotate-[-90deg] select-none transition-main text-dim-700 hover:text-dim-950 dark:text-dim-400 dark:hover:text-dim-200 max-sm:right-[-20px]">
+          <span v-if="activeSection < offsets.length - 1" class="p-1 cursor-pointer" @click="scrollToSection(activeSection + 1, true)">
+            <Icon name="grommet-icons:form-previous" /> Scroll Down
+          </span>
+          <span v-else class="p-1 cursor-pointer" @click="scrollToSection(0, true)">
+            Scroll To Top <Icon name="grommet-icons:form-next" />
+          </span>
+        </div>
+      </main>
     </div>
-  </main>
-
+  </div>
 </template>
 
 <style>
@@ -46,7 +49,8 @@ section {
 </style>
 
 <script setup>
-const darkMode = ref(true)
+const store = useStore()
+let darkMode = computed(() => store.darkMode)
 let inMove = false
 const moveDelay = 400
 let activeSection = ref(0)
@@ -75,6 +79,14 @@ onBeforeUnmount(() => {
   window.removeEventListener('touchstart', touchStart); // mobile devices
   window.removeEventListener('touchmove', touchMove); // mobile devices
 })
+
+
+ /**
+ * Toggles dark/light theme
+ */
+function toggleDarkMode() {
+  darkMode.value = !darkMode.value
+}
 
  /**
  * Calculates the absolute offsets of each section on the page and pushes it into the offsets array

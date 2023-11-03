@@ -15,18 +15,19 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#f8f8f8',
+        primary: "#0c0a09",
+        darkPrimary: "#f8f8f8",
         dim: {
-          50: "#fafafa",
-          100: "#f5f5f5",
-          200: "#e5e5e5",
-          300: "#d4d4d4",
-          400: "#a3a3a3",
-          500: "#737373",
-          600: "#525252",
-          700: "#404040",
-          800: "#262626",
-          900: "#171717",
+          50: "#fafaf9",
+          100: "#f5f5f4",
+          200: "#e7e5e4",
+          300: "#d6d3d1",
+          400: "#a8a29e",
+          500: "#78716c",
+          600: "#57534e",
+          700: "#44403c",
+          800: "#292524",
+          900: "#1c1917",
           950: "#0c0a09",
         },
       },
@@ -34,6 +35,9 @@ export default {
         sans: ['Karla', 'Arial', 'Helvetica', 'sans-serif', 'Georgia', 'serif'],
         raj: ['Rajdhani', 'Arial', 'Helvetica', 'sans-serif', 'Georgia', 'serif'],
         roboto: ['Roboto', 'Arial', 'Helvetica', 'sans-serif', 'Georgia', 'serif'],
+      },
+      transitionProperty: {
+        mainTransition: 'all 150ms ease-out'
       },
       animation: {
         glow: 'glow 1s ease-in-out infinite alternate',
@@ -56,11 +60,11 @@ export default {
           }
         },
         blink: {
-          '0%': {color: '#f8f8f8'},
-          '49%': {color: '#f8f8f8'},
+          '0%': {color: 'inherit'},
+          '49%': {color: 'inherit'},
           '60%': {color: 'transparent'},
-          '85%': {color: '#f8f8f8'},
-          '100%': {color: '#f8f8f8'}
+          '85%': {color: 'inherit'},
+          '100%': {color: 'inherit'}
         }
       }
     },

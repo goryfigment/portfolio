@@ -1,13 +1,15 @@
 <template>
   <div class="relative font-raj">
     <nuxt-link to="https://omnislash.com/app" target="_blank" rel="noopener noreferrer">
-      <img class="max-h-96" height="384" width="779" src="/omnislash/omnislash.png" alt="Omnislash" />
+      <img height="331" width="664" src="/omnislash/omnislash.png" alt="Omnislash" />
     </nuxt-link>
   </div>
 
   <h2 class="text-[32px] my-4 font-sans font-bold">
     <nuxt-link class="flex items-center gap-1" to="https://omnislash.com/app" target="_blank" rel="noopener noreferrer">
-      <img height="19" width="20" src="/omnislash/logo.png" alt="Omnislash Logo" />
+      <div class="p-0.5 bg-black rounded">
+        <img height="19" width="20" src="/omnislash/logo.png" alt="Omnislash Logo" />
+      </div>
       <span>Omnislash</span>
     </nuxt-link>
   </h2>
@@ -18,6 +20,7 @@
     <strong>Frontend Built with:</strong> 
     <ul class="flex flex-wrap gap-2 text-center justify-center">
       <li><Icon name="devicon:vuejs" /> VueJs,</li>
+      <li><Icon name="vscode-icons:file-type-vueconfig" /> Vuex,</li>
       <li><Icon name="devicon:typescript" /> Typescript,</li>
       <li><Icon name="devicon:css3" /> SASS</li>
     </ul>

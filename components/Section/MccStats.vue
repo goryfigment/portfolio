@@ -1,5 +1,5 @@
 <template>
-  <div class="relative font-raj overflow-hidden max-w-full">
+  <div class="relative font-raj overflow-hidden max-w-full text-darkPrimary">
     <div class="absolute z-10 w-full text-xs font-bold bg-[#070707] p-0.5">
       <nuxt-link to="https://www.mccstats.site/" target="_blank" rel="noopener noreferrer">MCC<span class="text-[#00ff66]">STATS</span></nuxt-link>
     </div>
@@ -8,28 +8,28 @@
       <p class="text-[9px] font-roboto mb-1.5">Stats & Leaderboards for Halo MCC</p>
 
       <div class="flex items-center bg-white text-[10px]">
-        <span class="text-[#a1a1a1] text-[9px] hover:text-[#6c6c6c] p-1.5 cursor-pointer transition-all duration-150 ease-out">
+        <span class="text-[#a1a1a1] text-[9px] hover:text-[#6c6c6c] p-1.5 cursor-pointer transition-main">
           <Icon name="fa-solid:search" />
         </span>
         <input v-model="mccStatsText" class="h-[26px] w-36 font-raj bg-transparent outline-none font-bold text-[#343434] placeholder-[#a1a1a1]" placeholder="Search" @keyup.enter="navigateToExternal('https://www.mccstats.site/profile/' + mccStatsText)">
 
-        <button class="bg-[#008400] text-white w-8 h-4 font-bold text-[8px] mr-1.5 transition-all duration-150 ease-out hover:brightness-110" @click="navigateToExternal('https://www.mccstats.site/profile/' + mccStatsText)">Enter</button>
+        <button class="bg-[#008400] text-white w-8 h-4 font-bold text-[8px] mr-1.5 transition-main hover:brightness-110" @click="navigateToExternal('https://www.mccstats.site/profile/' + mccStatsText)">Enter</button>
       </div>
 
       <div class="flex items-center">
-        <nuxt-link to="https://www.mccstats.site/leaderboards/most-50s" target="_blank" rel="noopener noreferrer" class="text-[#ffd700] p-1 transition-all duration-150 ease-out hover:brightness-125" aria-label="Mccstats Leaderboards">
+        <nuxt-link to="https://www.mccstats.site/leaderboards/most-50s" target="_blank" rel="noopener noreferrer" class="text-[#ffd700] p-1 transition-main hover:brightness-125" aria-label="Mccstats Leaderboards">
           <Icon name="fa-solid:trophy" />
         </nuxt-link>
 
-        <nuxt-link to="https://www.mccstats.site/donate" target="_blank" rel="noopener noreferrer" class="text-[#29df27] p-1 transition-all duration-150 ease-out hover:brightness-125" aria-label="Mccstats Donate Page">
+        <nuxt-link to="https://www.mccstats.site/donate" target="_blank" rel="noopener noreferrer" class="text-[#29df27] p-1 ttransition-main hover:brightness-125" aria-label="Mccstats Donate Page">
           <Icon name="fa-solid:dollar-sign" />
         </nuxt-link>
 
-        <nuxt-link to="https://discord.com/" target="_blank" rel="noopener noreferrer" class="text-[#7289da] p-1 transition-all duration-150 ease-out hover:brightness-125" aria-label="Mccstats Discord Link">
+        <nuxt-link to="https://discord.com/" target="_blank" rel="noopener noreferrer" class="text-[#7289da] p-1 transition-main hover:brightness-125" aria-label="Mccstats Discord Link">
           <Icon name="fa-brands:discord" />
         </nuxt-link>
 
-        <nuxt-link to="https://twitter.com/MccStats" target="_blank" rel="noopener noreferrer" class="text-[#1da1f2] p-1 transition-all duration-150 ease-out hover:brightness-125" aria-label="Mccstats Twitter Page">
+        <nuxt-link to="https://twitter.com/MccStats" target="_blank" rel="noopener noreferrer" class="text-[#1da1f2] p-1 transition-main hover:brightness-125" aria-label="Mccstats Twitter Page">
           <Icon name="fa-brands:twitter" />
         </nuxt-link>
       </div>

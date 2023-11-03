@@ -3,7 +3,7 @@
     <Icon class="text-[200px] rotate-[-6deg]" name="fxemoji:backofenvelope" />
 
     <div>
-      <p class="w-[200px]">Unleash your digital vision. Let's collaborate and bring your ideas to life.</p>
+      <p class="w-[200px]">Unleash your digital vision.</p>
     </div>
   </div>
 
@@ -14,6 +14,7 @@
     <ul class="flex flex-wrap gap-2 text-center justify-center">
       <li><Icon name="devicon:vuejs" /> VueJs,</li>
       <li><Icon name="logos:nuxt-icon" /> Nuxt,</li>
+      <li><Icon name="logos:pinia" /> Pinia,</li>
       <li><Icon name="logos:javascript" /> Javascript,</li>
       <li><Icon name="devicon:tailwindcss" /> TailWind</li>
     </ul>

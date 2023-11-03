@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     'nuxt-icon',
     'nuxt-lazy-load',
     '@nuxtjs/robots',
+    '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   css: [
     "~/assets/css/tailwind.css"
