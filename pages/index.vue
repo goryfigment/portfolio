@@ -178,6 +178,14 @@ function scrollToSection(id, force = false) {
 */
 function touchStart(e) {
   e.preventDefault()
+
+  const clickEvent = new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true,
+    view: window
+  })
+  
+  e.target.dispatchEvent(clickEvent)
   touchStartY = e.touches[0].clientY
 }
 
