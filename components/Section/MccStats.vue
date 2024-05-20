@@ -1,27 +1,27 @@
 <template>
   <div class="relative font-raj overflow-hidden max-w-full text-darkPrimary">
     <div class="absolute z-10 w-full text-xs font-bold bg-[#070707] p-0.5">
-      <nuxt-link to="https://www.mccstats.site/" target="_blank" rel="noopener noreferrer">MCC<span class="text-[#00ff66]">STATS</span></nuxt-link>
+      <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">MCC<span class="text-[#00ff66]">STATS</span></nuxt-link>
     </div>
     <div class="absolute top-20 left-6 z-10">
-      <nuxt-link to="https://www.mccstats.site/" target="_blank" rel="noopener noreferrer"><strong class="text-2xl font-bold">MCCSTATS<span class="text-[#00ff66]">.COM</span></strong></nuxt-link>
+      <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer"><strong class="text-2xl font-bold">MCCSTATS<span class="text-[#00ff66]">.COM</span></strong></nuxt-link>
       <p class="text-[9px] font-roboto mb-1.5">Stats & Leaderboards for Halo MCC</p>
 
       <div class="flex items-center bg-white text-[10px]">
         <span class="text-[#a1a1a1] text-[9px] hover:text-[#6c6c6c] p-1.5 cursor-pointer transition-main">
           <Icon name="fa-solid:search" />
         </span>
-        <input v-model="mccStatsText" class="h-[26px] w-36 font-raj bg-transparent outline-none font-bold text-[#343434] placeholder-[#a1a1a1]" placeholder="Search" @keyup.enter="navigateToExternal('https://www.mccstats.site/profile/' + mccStatsText)">
+        <input v-model="mccStatsText" class="h-[26px] w-36 font-raj bg-transparent outline-none font-bold text-[#343434] placeholder-[#a1a1a1]" placeholder="Search" @keyup.enter="navigateToExternal('https://mccstats.pythonanywhere.com/profile/' + mccStatsText)">
 
-        <button class="bg-[#008400] text-white w-8 h-4 font-bold text-[8px] mr-1.5 transition-main hover:brightness-110" @click="navigateToExternal('https://www.mccstats.site/profile/' + mccStatsText)">Enter</button>
+        <button class="bg-[#008400] text-white w-8 h-4 font-bold text-[8px] mr-1.5 transition-main hover:brightness-110" @click="navigateToExternal('https://mccstats.pythonanywhere.com/profile/' + mccStatsText)">Enter</button>
       </div>
 
       <div class="flex items-center">
-        <nuxt-link to="https://www.mccstats.site/leaderboards/most-50s" target="_blank" rel="noopener noreferrer" class="text-[#ffd700] p-1 transition-main hover:brightness-125" aria-label="Mccstats Leaderboards">
+        <nuxt-link to="https://mccstats.pythonanywhere.com/leaderboards/most-50s" target="_blank" rel="noopener noreferrer" class="text-[#ffd700] p-1 transition-main hover:brightness-125" aria-label="Mccstats Leaderboards">
           <Icon name="fa-solid:trophy" />
         </nuxt-link>
 
-        <nuxt-link to="https://www.mccstats.site/donate" target="_blank" rel="noopener noreferrer" class="text-[#29df27] p-1 ttransition-main hover:brightness-125" aria-label="Mccstats Donate Page">
+        <nuxt-link to="https://mccstats.pythonanywhere.com/donate" target="_blank" rel="noopener noreferrer" class="text-[#29df27] p-1 ttransition-main hover:brightness-125" aria-label="Mccstats Donate Page">
           <Icon name="fa-solid:dollar-sign" />
         </nuxt-link>
 
@@ -39,7 +39,7 @@
   </div>
 
   <h2 class="text-[32px] my-4 font-sans font-bold">
-    <nuxt-link to="https://www.mccstats.site/" target="_blank" rel="noopener noreferrer">MCCSTATS<span class="text-[#00ff66]">.COM</span></nuxt-link>
+    <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">MCCSTATS<span class="text-[#00ff66]">.COM</span></nuxt-link>
   </h2>
 
   <p class="text-center">A website providing leaderboards and player stats for Halo: Master Chief Collection.</p>
@@ -57,7 +57,7 @@
   </div>
 
   <div class="flex mt-4 gap-10">
-    <nuxt-link to="https://www.mccstats.site/" target="_blank" rel="noopener noreferrer">
+    <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">
       <UIButton>View Live</UIButton>
     </nuxt-link>
     <nuxt-link to="https://github.com/goryfigment/halo" target="_blank" rel="noopener noreferrer">
