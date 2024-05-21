@@ -1,6 +1,6 @@
 <template>
   <div :class="{'dark': darkMode}">
-    <div class="bg-dim-100 text-primary dark:bg-dim-950 dark:text-darkPrimary transition-main">
+    <div class="bg-white text-primary dark:bg-dim-950 dark:text-darkPrimary transition-main">
       <Header @scrollToSection="scrollToSection" />
 
       <Head>
