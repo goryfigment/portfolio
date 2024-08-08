@@ -1,5 +1,9 @@
 <template>
-  <div class="relative font-raj overflow-hidden max-w-full text-darkPrimary">
+  <h2 class="text-[32px] my-4 font-sans font-bold">
+    <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">MCCSTATS<span class="text-[#00ff66]">.COM</span></nuxt-link>
+  </h2>
+
+  <div class="relative font-raj overflow-hidden max-w-full text-darkPrimary rounded-md">
     <div class="absolute z-10 w-full text-xs font-bold bg-[#070707] p-0.5">
       <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">MCC<span class="text-[#00ff66]">STATS</span></nuxt-link>
     </div>
@@ -34,17 +38,13 @@
         </nuxt-link>
       </div>
     </div>
-    <video class="h-96 max-w-2xl" crossorigin="anonymous" preload="auto" loop autoplay muted src="/mccstats/compressed.mp4"></video>
+    <video class="h-95 max-w-2xl rounded-md" crossorigin="anonymous" preload="auto" loop autoplay muted src="/mccstats/compressed.mp4" data-not-lazy></video>
     <!-- <img class="h-96 max-w-2xl" src="@/assets/projects/mccstats/vg-gif.gif" alt="Mccstats Video" /> -->
   </div>
 
-  <h2 class="text-[32px] my-4 font-sans font-bold">
-    <nuxt-link to="https://mccstats.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">MCCSTATS<span class="text-[#00ff66]">.COM</span></nuxt-link>
-  </h2>
+  <p class="text-center mt-6 max-w-2xl">A website providing leaderboards and player stats for Halo: Master Chief Collection.</p>
 
-  <p class="text-center">A website providing leaderboards and player stats for Halo: Master Chief Collection.</p>
-
-  <div class="flex flex-col items-center my-2">
+  <div class="flex flex-col items-center my-3">
     <strong>Built with:</strong> 
     <ul class="flex flex-wrap gap-2 text-center justify-center">
       <li><Icon name="devicon:html5" /> Html5,</li>

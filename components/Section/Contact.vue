@@ -6,7 +6,7 @@
   <a class="text-2xl m-8 hover:animate-disco" target="_blank" rel="noopener noreferrer" href="mailto:dev.spadilla@gmail.com"><b>dev.spadilla@gmail.com</b></a>
 
   <div class="flex flex-col items-center my-2">
-    <strong>Site Built with:</strong> 
+    <strong>Portfolio Site Built with:</strong> 
     <ul class="flex flex-wrap gap-2 text-center justify-center">
       <li><Icon name="logos:nuxt-icon" /> Nuxt,</li>
       <li><Icon name="devicon:vuejs" /> VueJs,</li>

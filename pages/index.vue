@@ -13,16 +13,16 @@
 
       <main>
         <section>
-          <LazySectionHome />
+          <SectionHome />
         </section>
         <section>
-          <LazySectionMccStats />
+          <SectionMccStats />
         </section>
         <section>
-          <LazySectionOmnislash />
+          <SectionOmnislash />
         </section>
         <section>
-          <LazySectionContact />
+          <SectionContact />
         </section>
 
         <div class="fixed right-0 bottom-20 rotate-[-90deg] select-none transition-main text-dim-700 hover:text-dim-950 dark:text-dim-400 dark:hover:text-dim-200 max-sm:right-[-20px]">
