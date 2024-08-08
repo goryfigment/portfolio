@@ -38,7 +38,7 @@
         </nuxt-link>
       </div>
     </div>
-    <video class="h-95 max-w-2xl rounded-md" crossorigin="anonymous" preload="auto" loop autoplay muted src="/mccstats/compressed.mp4" data-not-lazy></video>
+    <video class="h-95 w-full max-w-2xl rounded-md" crossorigin="anonymous" preload="auto" loop autoplay muted src="/mccstats/compressed.mp4" data-not-lazy></video>
     <!-- <img class="h-96 max-w-2xl" src="@/assets/projects/mccstats/vg-gif.gif" alt="Mccstats Video" /> -->
   </div>
 
