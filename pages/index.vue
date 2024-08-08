@@ -16,13 +16,13 @@
           <LazySectionHome />
         </section>
         <section>
-          <LazySectionMccStats v-if="loadComponents" />
+          <LazySectionMccStats />
         </section>
         <section>
-          <LazySectionOmnislash v-if="loadComponents" />
+          <LazySectionOmnislash />
         </section>
         <section>
-          <LazySectionContact v-if="loadComponents" />
+          <LazySectionContact />
         </section>
 
         <div class="fixed right-0 bottom-20 rotate-[-90deg] select-none transition-main text-dim-700 hover:text-dim-950 dark:text-dim-400 dark:hover:text-dim-200 max-sm:right-[-20px]">
