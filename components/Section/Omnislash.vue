@@ -25,10 +25,4 @@
       <li><Icon name="devicon:css3" /> SASS</li>
     </ul>
   </div>
-
-  <div class="flex mt-4 gap-10">
-    <nuxt-link to="https://omnislash.com/info" target="_blank" rel="noopener noreferrer">
-      <UIButton>View Live</UIButton>
-    </nuxt-link>
-  </div>
 </template>
