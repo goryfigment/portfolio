@@ -14,7 +14,7 @@
 
     <div>
       <h1 class="text-[32px] my-4 font-bold">
-        <span>I'm Solomon</span>
+        <span>I'm Sol</span>
       </h1>
       <p class="text-center">a web <span :class="showChange ? disco: ''">developer</span>.</p>
     </div>
