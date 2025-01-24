@@ -1,7 +1,7 @@
 <template>
   <h2 class="text-[32px] my-4 font-sans font-bold">
     <nuxt-link class="flex items-center gap-1" to="https://omnislash.com/info" target="_blank" rel="noopener noreferrer">
-      <div class="p-0.5 bg-black">
+      <div class="p-0.5 bg-black rounded-sm">
         <img height="19" width="20" src="/omnislash/logo.png" alt="Omnislash Logo" data-not-lazy />
       </div>
       <span>Omnislash</span>

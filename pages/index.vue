@@ -22,6 +22,9 @@
           <SectionOmnislash />
         </section>
         <section>
+          <SectionM2M />
+        </section>
+        <section>
           <SectionContact />
         </section>
 

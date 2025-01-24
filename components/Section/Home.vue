@@ -16,8 +16,8 @@
       <h1 class="text-[32px] mt-4 font-bold">
         <span>I'm Solomon</span>
       </h1>
-      <p class="text-left">Vue, Javascript, Node</p>
-      <p class="text-right w-56 -mt-5" ><span :class="disco">web dev</span></p>
+      <p class="text-left ml-1">Vue, Nuxt, Node</p>
+      <p class="text-right w-56 -mt-5 -ml-8"><span :class="disco">web dev</span></p>
     </div>
 
     <div id="mouse" :class="showChange ? 'rotate-[-42deg]' : 'rotate-[-32deg]'" class="bg-white absolute right-[-65px] top-[-26px] w-[37px] h-[50px] shadow-[4px_18px_30px_15px_rgba(95,95,95,1)] rounded-t-[50%_30%] rounded-b-[50%_44%] transition-all duration-500 ease-in-out max-sm:right-[-30px] max-sm:top-[-50px] max-xs:right-[-10px] max-xs:top-[-80px]">

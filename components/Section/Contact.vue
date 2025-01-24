@@ -8,8 +8,8 @@
   <div class="flex flex-col items-center my-2">
     <strong>Portfolio Site Built with:</strong> 
     <ul class="flex flex-wrap gap-2 text-center justify-center">
-      <li><Icon name="logos:nuxt-icon" /> Nuxt,</li>
       <li><Icon name="devicon:vuejs" /> VueJs,</li>
+      <li><Icon name="logos:nuxt-icon" /> Nuxt,</li>
       <li><Icon name="logos:pinia" /> Pinia,</li>
       <li><Icon name="logos:javascript" /> Javascript,</li>
       <li><Icon name="devicon:tailwindcss" /> TailWind</li>
